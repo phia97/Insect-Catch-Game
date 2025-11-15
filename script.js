@@ -83,5 +83,8 @@ function increaseScore() {
         message.classList.add('visible');
     }
     
+    if (score > 29) {
+        message.classList.add('hidden');
+    }
     scoreEl.innerHTML = `Score: ${score}`;
 }
